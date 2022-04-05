@@ -23,3 +23,12 @@ def number(num):
         return int(num)
     else:
         return float(num)
+
+def len_max(a,b): 
+    sorted_len = [len(a),len(b)]
+    sorted_len.sort()
+
+    numbers = (number(a),number(b))
+    num_max =max(numbers)
+
+    return sorted_len[1]
